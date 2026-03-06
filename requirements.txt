@@ -33,8 +33,6 @@ httpcore==1.0.9
 httpx==0.28.1
 idna==3.10
 itsdangerous==2.2.0
-jax==0.6.2
-jaxlib==0.6.2
 Jinja2==3.1.6
 jiter==0.10.0
 Js2Py==0.74
@@ -124,3 +122,4 @@ wrapt==2.1.0
 wsproto==1.2.0
 yarl==1.20.1
 zope.interface==7.2
+

@@ -67,6 +67,8 @@ history = model.fit(
 )
 
 # Save model
-model.save("plant_model.h5")
+# Save model in modern Keras format
+model.save("plant_model.keras")
 
-print("Model saved as plant_model.h5")
+print("Model saved as plant_model.keras")
+

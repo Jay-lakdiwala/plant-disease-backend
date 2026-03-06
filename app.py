@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app) # Allows the frontend to communicate with backend
 
 # Load your specific model
-model = tf.keras.models.load_model("plant_model.h5")
+model = tf.keras.models.load_model("plant_model.keras", compile=False)
 
 class_names = [
     "Pepper__Bacterial_spot", "Pepper__healthy", "Potato__Early_blight",
@@ -58,4 +58,5 @@ import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
+
     app.run(host="0.0.0.0", port=port)
